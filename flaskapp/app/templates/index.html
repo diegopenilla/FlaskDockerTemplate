@@ -1,0 +1,11 @@
+<h1>Welcome to this data science project</h1>
+<h2>List of registered blueprints:</h2>
+{% for bp in bprints %}
+<li>{{ bp }}</li>
+{% endfor %}
+
+<h3>List of all available routes in the app</h3>
+<p> Check the routes with /doc to see the SwaggerUI docs</p>
+{% for route in routes %}
+<li>{{ route }}</li>
+{% endfor %}
